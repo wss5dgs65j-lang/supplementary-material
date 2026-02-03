@@ -684,7 +684,7 @@ def tokenize_or_load(
 
 
     tokenizer = AutoTokenizer.from_pretrained(
-        model_name, use_fast=True, token="REMOVED_HF_TOKEN"
+        model_name, use_fast=True
     )
     if console is not None:
         console.print(f"[green]✓ Loaded tokenizer from: {model_name}[/green]")
